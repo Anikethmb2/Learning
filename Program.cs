@@ -6,7 +6,8 @@ namespace Learning
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           Car obj = new Car();
+           obj.display();
         }
     }
 }
