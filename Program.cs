@@ -28,6 +28,15 @@ namespace Learning
             bus.seatCapacity(45);
             bus.noOfWheels(6);
             bus.fuelCapacity();
+
+
+            //----------------Method overload -------------------
+            MethodOverloading methodOverloading =   new MethodOverloading();
+            methodOverloading.add(2,3);
+            methodOverloading.add(3.5f,5.5f);
+            methodOverloading.add(5,6,7);
+            methodOverloading.displayNameId("Aniketh",25);
+            methodOverloading.displayNameId(25,"Aniketh");
         }
 
     }
