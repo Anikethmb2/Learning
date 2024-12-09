@@ -37,6 +37,31 @@ namespace Learning
             methodOverloading.add(5,6,7);
             methodOverloading.displayNameId("Aniketh",25);
             methodOverloading.displayNameId(25,"Aniketh");
+
+
+            //-------------------method overide-------------
+            Base obj3 = new Base();
+
+            int sum=obj3.add(2,5);
+            Console.WriteLine("invoke base class function "+ sum);
+
+             obj3 = new Derive();                   // multiple way of creating object
+            
+            int total = obj3.add(2,5);
+            Console.WriteLine("invoke derive class function "+ total);
+
+            Derive obj4 = new Derive();
+            total = obj4.add(2,5);
+            Console.WriteLine("invoke derive class function "+ total);
+
+            Base obj5 = new Derive();
+            total = obj5.add(2,5);
+            Console.WriteLine("invoke derive class function "+ total);
+
+            //----------------abstract--------------
+            Square sh = new Square(5);
+            sh.area();
+
         }
 
     }
