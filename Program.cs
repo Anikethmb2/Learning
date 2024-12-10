@@ -15,7 +15,7 @@ namespace Learning
            ConstructorExample constructorExample2 = new ConstructorExample(5,"Ram");
            Console.WriteLine("this is parameterized constructor id " + constructorExample2.id +" and name "+ constructorExample2.name);
             Console.WriteLine("--------------------Inhertance------------------------------");
-            // single inhertance
+            // ----------------------------------single inhertance
             DerviedClass obj1 = new DerviedClass();
 
             //----------------hierarchical inhertance----------------------------
@@ -61,6 +61,16 @@ namespace Learning
             //----------------abstract--------------
             Square sh = new Square(5);
             sh.area();
+
+
+            //--------------------Encapsulation-------------------
+            Encapsulate encapsulate = new Encapsulate();
+
+            encapsulate.Name="Aniketh";
+            encapsulate.Id =25;
+
+            Console.WriteLine("This is Encapsulation Example printing name and id");
+            Console.WriteLine("Name: "+encapsulate.Name + " | id: "+ encapsulate.Id);
 
         }
 
