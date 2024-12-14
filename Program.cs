@@ -72,6 +72,22 @@ namespace Learning
             Console.WriteLine("This is Encapsulation Example printing name and id");
             Console.WriteLine("Name: "+encapsulate.Name + " | id: "+ encapsulate.Id);
 
+
+
+
+            //---------------------- constructor example 2----------------------------
+            Student student =new   Student();
+            student.id=22;
+            student.name="Aniketh";
+            Console.WriteLine("constructor example id :"+student.id + " |name "+ student.name);
+            Student student1 = new Student(student);
+               Console.WriteLine("id :"+student1.id + " name: "+ student1.name);
+
+               Student student2=student;
+               student2.name="madesha";
+
+               Console.WriteLine(student.name);
+
         }
 
     }
