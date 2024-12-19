@@ -58,7 +58,7 @@ namespace Learning
             total = obj5.add(2,5);
             Console.WriteLine("invoke derive class function "+ total);
 
-            //----------------abstract--------------
+            //----------------abstract----------------
             Square sh = new Square(5);
             sh.area();
 
